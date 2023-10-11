@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+    <style>
+        /* aravind css*/
+        .body-technical {
+  background-color: #777;
+}
+.event {
+  display: grid;
+   margin: 20px;
+   position: relative;
+}
+.heading h1 {
+  font-size: 42px;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: solid;
+  text-transform: uppercase;
+  background-color: #140B5C;
+  color: white;
+  position: relative;
+  animation: slideLeftToRight 2s ease-in-out
+}
+  @keyframes slideLeftToRight {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+.left-content, .right-content {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  transition: opacity 0.3s;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+
+.left-content {
+  left: 0;
+}
+ a button{
+  color: white;
+  background-color: #f7490f;
+  width: auto;
+  height: auto;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-color: #000;
+}
+
+.right-content {
+  right: 0;
+}
+
+.event:hover .left-content, .event:hover .right-content {
+  display: flex;
+}
+
+.event-image {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+    </style>
+
+    <title>Event Registration page</title>
+  </head>
+  <body>
+    <!-- header section starts  -->
+
+    <header class="header">
+
+      <a href="#" class="logo">
+         <img src="Image/logo.png" alt="collage logo" style="width: 100px; height: 80px; " /> 
+         <div class="collage-name">SCSVMV UNIVERSITY</div></a>
+   
+         <nav class="navbar">
+          <!-- <div id="close-navbar" class="close-icon"><img src="Image/close-icon.gif" width="50" /></div> -->
+
+             <ul class="navbar-links">
+
+            <li class="navbar-dropdown">
+              <a href="poster.html">Events</a></li>
+               
+
+          <!-- <li class="navbar-dropdown">
+              <a href="admission-form.html" target ="_blank" >Registration</a> </li> --> 
+                
+              <li class="navbar-dropdown">
+                <a href="contact-us.html">Contact </a> </li>
+
+          <li class="navbar-dropdown">
+              <a href="#">Otherlinks</a> </li>
+      </ul>
+       </nav>
+
+      <div class="icons">
+        <div id="account-btn" class="header-icon">
+          <img src="Image/avatar-icon.svg" alt="user-icon" />
+          <img
+            src="Image/avatar-icon-hover.gif"
+            alt="user-icon"
+            width="10"
+            class="header-icon-hover"
+          />
+        </div>
+
+        <div id="menu-btn" class="header-icon">
+          <img src="Image/menu-icon.svg" alt="menu-icon" />
+          <img
+            src="Image/menu-icon-hover.gif"
+            alt="menu-icon"
+            width="30"
+            class="header-icon-hover"
+          />
+        </div>
+      </div>
+    </header>
+    <div class ="body-technical">
+        <div class="heading">
+               <h1>  NON technical events</h1>
+        </div>
+    <div class="event">
+      
+      <div class="left-content">
+        <h1>Cricket Match</h1>
+        <p>
+          Date: 16/10/2023<br />
+        
+          Location:Play Groundn<br />
+          
+        </p>
+       
+          
+        </a>
+      </div>
+      <img
+        src="Image/cricket.jpg"
+        alt="Hackathon"
+        class="event-image"
+        style="
+          border: 2px solid #0f9be1;
+          display: block;
+          margin: 0 auto;
+          height: 250px;
+          width: 450px;
+        "
+      />
+      <div class="right-content">
+        <h3>Organizer: Vijay Simha(IV-CSE)</h3>
+        <br />
+        <h3>Co-ordinator: SaiNikhil (III-CSE)</h3>
+        <h4 style="font-size: large">PH: 9491592005</h4>
+        
+      </div>
+    </div>
+
+    <div class="event">
+      <div class="left-content">
+        <h1>Basket Ball</h1>
+        <br />
+        <p>
+          Date: 16/10/2023<br />
+        
+          Location: Basket Ball Court<br />
+        
+        </p>
+        
+         
+        </a>
+      </div>
+      <img
+        src="Image/basketball-hardwood-court-floor.jpg"
+        alt="Hackathon"
+        class="event-image"
+        style="
+          border: 2px solid #e6835f;
+          display: block;
+          margin: 0 auto;
+          height: 300px;
+          width: 450px;
+        "
+      />
+      <div class="right-content">
+        <h3>Organizer: Sai Teja (IV-CSE)</h3>
+        <br />
+        <h3>Co-Ordinator: Ashwin (III-CSE)</h3>
+        <h4 style="font-size: large">PH: 9494605253,9361515502</h4>
+        
+      </div>
+    </div>
+    <div class="event">
+      <div class="left-content">
+        <h1>Throw Ball (Only Girls)</h1>
+        <br />
+        <p>
+          <!-- Date: 16/10/2023<br />
+          Time: 2:30 PM - 3:30 PM<br /> -->
+          Location: Volley Ball court<br />
+       
+        </p>
+       
+          
+        </a>
+      </div>
+      <img
+        src="Image/throwball.jpg"
+        alt="ThrowBall"
+        class="event-image"
+        style="
+          border: 2px solid #e6835f;
+          display: block;
+          margin: 0 auto;
+          height: 300px;
+          width: 450px;
+        "
+      />
+      <div class="right-content">
+        <h3>Organizer: Srivatsan(IV-CSE)</h3>
+        <br />
+        <h3>Co-Ordinator: SubhaMeera (III-CSE)</h3>
+        <h4 style="font-size: large">PH: 6381621699</h4>
+       
+      </div>
+    </div>
+    <div class="event">
+      <div class="left-content">
+        <h1>Beg/Borrow/Steal</h1>
+        <br />
+        <p>
+          Date: 09/11/2023<br />
+          <!-- Time: 3:45 PM - 4:45 PM<br /> -->
+          Location: CSE Seminar Hall<br />
+         
+        </p>
+        <!-- <a href="https://forms.gle/quxbiZwpwkDXHB7o8">
+          <button>Click to Register</button>
+        </a> -->
+      </div>
+      <img
+        src="Image/beg-borrow-steal.png"
+        alt="Hackathon"
+        class="event-image"
+        style="
+          border: 2px solid #e6835f;
+          display: block;
+          margin: 0 auto;
+          height: 300px;
+          width: 450px;
+        "
+      />
+      <div class="right-content">
+        <h3>Organizer: VijaySimha (IV-CSE)</h3>
+        <br />
+        <h3>Co-Ordinator: Manohar (III-CSE)</h3>
+        <h4 style="font-size: large">PH: 9491592005</h4>
+        <h4>Judge:DR M.Gayathri</h4>
+        <a href="./public/begborrowsteel.pdf">
+          <button>Rules and Regulations</button>
+        </a>
+      </div>
+    </div>
+    <div class="event">
+        <div class="left-content">
+          <h1>Thug of War (Only Girls)</h1>
+          <br />
+          <p>
+            <!-- Date: 6/11/2023<br />
+            Time: 3:45 PM - 4:45 PM<br /> -->
+            Location: Ground<br />
+            <!-- Last Date: 1/11/2023 -->
+          </p>
+          <!-- <a href="https://forms.gle/quxbiZwpwkDXHB7o8">
+            <button>Click to Register</button>
+          </a> -->
+        </div>
+        <img
+          src="Image/mature-people-tug-war.jpg"
+          alt="Hackathon"
+          class="event-image"
+          style="
+            border: 2px solid #e6835f;
+            display: block;
+            margin: 0 auto;
+            height: 300px;
+            width: 450px;
+          "
+        />
+        <div class="right-content">
+          <h3>Organizer: Srinidhi (IV-CSE)</h3>
+          <br />
+          <h3>Co-Ordinator: Sowmiya (III-CSE)</h3>
+          <h4 style="font-size: large">PH: 8247061639</h4>
+          <!-- <h4>Judge:</h4> -->
+        </div>
+      </div>
+      <div class="event">
+        <div class="left-content">
+          <h1>Treasure Hunt</h1>
+          <br />
+          <p>
+            <!-- Date: 6/11/2023<br />
+            Time: 3:45 PM - 4:45 PM<br /> -->
+            Location: CSE Seminar Hall<br />
+            <!-- Last Date: 1/11/2023 -->
+          </p>
+          <!-- <a href="https://forms.gle/quxbiZwpwkDXHB7o8">
+            <button>Click to Register</button>
+          </a> -->
+        </div>
+        <img
+          src="Image/treasurehunt.jpg"
+          alt="Hackathon"
+          class="event-image"
+          style="
+            border: 2px solid #e6835f;
+            display: block;
+            margin: 0 auto;
+            height: 300px;
+            width: 450px;
+          "
+        />
+        <div class="right-content">
+          <!-- <h3>Organizer: Sriram Krishnan (III-CSE)</h3>
+          <br />
+          <h3>Co-Ordinator: Srinidhi (IV-CSE)</h3>
+          <h4 style="font-size: large">PH: 8886122668, 8247061639</h4> -->
+          <h4>Judge:DR M.Gayathri</h4>
+        </div>
+      </div>
+      <div class="event">
+        <div class="left-content">
+          <h1>Photography</h1>
+          <br />
+          <!-- <p>
+            Date: 6/11/2023<br />
+            Time: 3:45 PM - 4:45 PM<br />
+            Location: CSE Seminar Hall<br />
+            Last Date: 1/11/2023
+          </p> -->
+          <!-- <a href="https://forms.gle/kwqf5w37rahyxQ928">
+            <button>Click to Register</button>
+          </a> -->
+        </div>
+        <img
+          src="Image/camera.jpg"
+          alt="Hackathon"
+          class="event-image"
+          style="
+            border: 2px solid #e6835f;
+            display: block;
+            margin: 0 auto;
+            height: 300px;
+            width: 450px;
+          "
+        />
+        <div class="right-content">
+          <a href="https://forms.gle/kwqf5w37rahyxQ928">
+            <button>Click to Register</button>
+          </a>
+          <!-- <h3>Organizer: Sriram Krishnan (III-CSE)</h3>
+          <br />
+          <h3>Co-Ordinator: Srinidhi (IV-CSE)</h3>
+          <h4 style="font-size: large">PH: 8886122668, 8247061639</h4>
+          <h4>Judge:</h4> -->
+        </div>
+      </div>
+      <div class="event">
+        <div class="left-content">
+          <h1>Poster Making</h1>
+          <br />
+          <p>
+            <!-- Date: 6/11/2023<br /> -->
+            <!-- Time: 3:45 PM - 4:45 PM<br /> -->
+            Location: CSE Seminar Hall<br />
+            <!-- Last Date: 1/11/2023 -->
+          </p>
+          <a href="https://forms.gle/D2YmRu9qT6BZeDbQ7">
+            <button>Click to Register</button>
+          </a>
+        </div>
+        <img
+          src="Image/editing.jpg"
+          alt="Hackathon"
+          class="event-image"
+          style="
+            border: 2px solid #e6835f;
+            display: block;
+            margin: 0 auto;
+            height: 300px;
+            width: 450px;
+          "
+        />
+        <div class="right-content">
+          <h3>Organizer: Laasya (III-CSE)</h3>
+          <br />
+          <h3>Co-Ordinator: Vyshnavi (IV-CSE)</h3>
+          <h4 style="font-size: large">PH: 8074389450</h4>
+          <h4>Judges:Dr. R.Poorva Devi,Dr.D. Thamarai Selvi</h4>
+          <a href="./public/Poster Making.pdf">
+            <button>Rules and Regulations</button>
+          </a>
+        </div>
+      </div>
+      <div class="event">
+        <div class="left-content">
+          <h1>Game Stall</h1>
+          <br />
+          <p>
+            Date: 09/11/2023<br />
+            <!-- Time: 3:45 PM - 4:45 PM<br /> -->
+            <!-- Location: CSE Seminar Hall<br /> -->
+            <!-- Last Date: 1/11/2023 -->
+          </p>
+          <!-- <a href="https://forms.gle/quxbiZwpwkDXHB7o8">
+            <button>Click to Register</button>
+          </a> -->
+        </div>
+        <img
+          src="Image/gamestall.jpg"
+          alt="Hackathon"
+          class="event-image"
+          style="
+            border: 2px solid #e6835f;
+            display: block;
+            margin: 0 auto;
+            height: 300px;
+            width: 450px;
+          "
+        />
+        <div class="right-content">
+          <h3>Organizer:Jeevetha,SaiJanani (III-CSE)</h3>
+          <br />
+          <h3>Co-Ordinator:Dhanush,Lokesh(IV-CSE)</h3>
+          <h4 style="font-size: large">PH: 6302622573</h4>
+          <!-- <h4>Judge:</h4> -->
+          </div>
+      </div>
+  </body>
+</html>
+
+    <footer>
+        <div class="bottom-details">
+            <div class="bottom_text">
+              <span class="copyright_text">Copyright © 2023 | All rights reserved To SCSVMV</span>
+              <span class="policy_terms">
+                <a href="#">Privacy policy</a>
+                <a href="#">Terms & condition</a>
+              </span>
+            </div>
+          </div>
+        </footer> 
+        
+    
+</body>
+</html>    
+
+   

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    
+    <title>Admission Form 2022</title>
+</head>
+<body>
+
+    
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <a href="#" class="logo">
+           <img src="Image/logo.png" alt="collage logo" style="width: 100px; height: 80px; " /> 
+           <div class="collage-name">SCSVMV UNIVERSITY</div></a>
+     
+           <nav class="navbar">
+              <div id="close-navbar" class="close-icon"><img src="Image/close-icon.gif" width="50" /></div>
+  
+                 <ul class="navbar-links">
+  
+                <li class="navbar-dropdown">
+                  <a href="#">Events</a>
+                  
+  
+              <li class="navbar-dropdown">
+                  <a href="#" target ="_blank" >Registration</a> </li>
+                    
+                  <li class="navbar-dropdown">
+                    <a href="contact-us.html">Contact </a> </li>
+  
+              <li class="navbar-dropdown">
+                  <a href="#">Otherlinks</a> </li>
+          </ul>
+           </nav>
+     
+        <div class="icons">
+           <div id="account-btn" class="header-icon"><img src="Image/avatar-icon.svg" alt="user-icon" />
+             <img src="Image/avatar-icon-hover.gif" alt="user-icon" width="10" class="header-icon-hover" /></div>
+  
+           <div id="menu-btn" class="header-icon"><img src="Image/menu-icon.svg" alt="menu-icon" />
+             <img src="Image/menu-icon-hover.gif" alt="menu-icon" width="30" class="header-icon-hover" /></div>
+        </div>
+     
+     </header>
+
+<!--Admission form start-->
+
+<div class="form-section">
+    <div class="container">
+        <header>Registration</header>
+
+        <form method="post" id="admission-form">
+            <div class="form step step-1 active">
+                <div class="details personal">
+                    <span class="title">Student Details</span>
+                    <span style="float: right; font-size: 16px; margin: 5px 35px;" >( step 1/1 )</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name <span class="star">*</span></label>
+                            <input type="text" id="name" name="name" placeholder="enter your fullname"/>
+                        </div>
+                        <div class="input-field">
+                            <label>Email(College)/1st year use personal mail</label>
+                            <input type="text" placeholder="Enter your email id" pattern="[a-z0-9.@]+"id="email" name="email" />
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mobile Number<span class="star">*</span></label>
+                            <input type="tel" placeholder="Enter mobile number" pattern="[6789][0-9]{9}" size="10" id="mobilenumber" name="mobilenumber" maxlength="10" >
+                        </div>
+
+                        <div class="input-field">
+                            <label>registerno<span class="star">*</span></label>
+                            <input type="text" placeholder="Enter ID number"  id="registerno" name="registerno" >
+                        </div>
+                        <div class="input-field">
+                          <label>Year<span class="star">*</span></label>
+                          <select id="year" name="year"  id ="year">
+                            <option value="">Select a year</option>
+                            <option value="1">1st Year</option>
+                            <option value="2">2nd Year</option>
+                            <option value="3">3rd Year</option>
+                            <option value="4">4th Year</option>
+                          </select>
+                        </div>
+                       
+                  
+                        <button type="submit" class="submit-btn"> Submit
+                        <i class="uil uil-navigator"></i>
+                        </button>
+                               
+            
+                  
+                </div> 
+            </div>
+          </form>
+          <div id="success-message" style="display: none; position: absolute; bottom: 10rem; background-color: #4CAF50; color: #fff; padding: 10px; border: 1px solid #000; border-radius: 5px;">
+            <p>Data saved successfully <span>&#9989;</span></p>
+        </div>
+      
+    </div>
+  </div>
+    
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+ <!-- <script src="https://media.twiliocdn.com/sdk/js/client/v1.15/twilio.js"></script> -->
+ <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twilio/1.21.0/twilio.min.js"></script> -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+ <script src="./script.js"> </script>
+
+
+
+
+</body>
+</html>
