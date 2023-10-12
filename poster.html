@@ -113,6 +113,34 @@
     color: #666;
     margin-bottom: 40px;
 }
+
+/* Style for the section title */
+.section-title {
+  font-size: 34px;
+  font-family: 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  color: white;
+  background-color: #4CAF50; /* Attractive green color */
+  text-align: center;
+  display: inline-block; /* To fit the content width */
+  padding: 10px 20px;
+  border-radius: 5px;
+  animation: bounce 1s ease infinite; /* Bouncing animation */
+}
+
+/* Animation keyframes for bouncing effect */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-50px); /* Bounce up */
+  }
+  60% {
+    transform: translateY(-5px); /* Bounce down */
+  }
+}
+
         
     </style>
     
@@ -172,8 +200,10 @@
 
 <section id="about" class="about" >
     <div class="container1">
-        <div class="section-title" style="margin-top: -85px;font-size: 34px;font-family: 'Times New Roman', Times, serif;
-        text-decoration: solid;text-transform: uppercase;color: white;background-color: blue;text-align: center;">We Cordially Invite</div>
+        <div class="section-title">
+  We Cordially Invite
+</div>
+
         <img src="Image/poster.jpg" alt="Deepotsav Image" class="section-image" style="width: 100%; height: 100%; object-fit: cover;">
         <h2 class="section-title">Deepotsav@2K23</h2>
         <p class="section-text">
