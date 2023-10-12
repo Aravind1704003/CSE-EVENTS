@@ -41,6 +41,8 @@
       transform: translateX(0);
       opacity: 1;
     }
+
+    
 }
 
 .left-content, .right-content {
@@ -87,6 +89,36 @@
   height: 200px;
   object-fit: cover;
 }
+/* Style for the heading container */
+.heading1 {
+  background-color: #333; /* Background color */
+  color: #fff; /* Text color */
+  text-align: center; /* Center the text */
+  padding: 20px 0; /* Add padding for spacing */
+  font-size: 24px; /* Font size */
+  font-weight: bold; /* Bold text */
+  text-transform: uppercase; /* Uppercase text */
+  position: relative; /* Position for animations */
+}
+
+/* Style for the h1 element within the heading */
+.heading1 h1 {
+  margin: 0; /* Remove default margin */
+  animation: slideIn 1s ease; /* Slide-in animation */
+}
+
+/* Animation keyframes for slide-in effect */
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%); /* Start off-screen to the left */
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0); /* Slide to the original position */
+    opacity: 1;
+  }
+}
+
     </style>
     
     <title>Event Registration page</title>
@@ -130,8 +162,8 @@
         </div>
      </header>
      <div class ="body-technical">
-     <div class="heading">
-            <h1> technical events</h1>
+     <div class="heading1">
+            <h1> Technical events</h1>
      </div>
      <div class="event">
         <div class="left-content">

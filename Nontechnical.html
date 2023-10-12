@@ -90,6 +90,38 @@
   height: 200px;
   object-fit: cover;
 }
+
+/* Style for the heading container */
+.heading1 {
+  background-color: #333; /* Background color */
+  color: #fff; /* Text color */
+  text-align: center; /* Center the text */
+  padding: 20px 0; /* Add padding for spacing */
+  font-size: 24px; /* Font size */
+  font-weight: bold; /* Bold text */
+  text-transform: uppercase; /* Uppercase text */
+  position: relative; /* Position for animations */
+}
+
+/* Style for the h1 element within the heading */
+.heading1 h1 {
+  margin: 0; /* Remove default margin */
+  animation: slideIn 1s ease; /* Slide-in animation */
+}
+
+/* Animation keyframes for slide-in effect */
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%); /* Start off-screen to the left */
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0); /* Slide to the original position */
+    opacity: 1;
+  }
+}
+
+
     </style>
 
     <title>Event Registration page</title>
@@ -146,7 +178,7 @@
       </div>
     </header>
     <div class ="body-technical">
-        <div class="heading">
+        <div class="heading1">
                <h1>  NON technical events</h1>
         </div>
     <div class="event">
@@ -156,7 +188,7 @@
         <p>
           Date: 16/10/2023<br />
         
-          Location:Play Groundn<br />
+          Location:Play Ground<br />
           
         </p>
        
@@ -245,9 +277,9 @@
         "
       />
       <div class="right-content">
-        <h3>Organizer: Srivatsan(IV-CSE)</h3>
+        <!-- <h3>Organizer: Srivatsan(IV-CSE)</h3> -->
         <br />
-        <h3>Co-Ordinator: SubhaMeera (III-CSE)</h3>
+        <h3>Organizer: SubhaMeera (III-CSE)</h3>
         <h4 style="font-size: large">PH: 6381621699</h4>
        
       </div>
@@ -291,7 +323,7 @@
     </div>
     <div class="event">
         <div class="left-content">
-          <h1>Thug of War (Only Girls)</h1>
+          <h1>Tug of War (Only Girls)</h1>
           <br />
           <p>
             <!-- Date: 6/11/2023<br />
@@ -357,9 +389,48 @@
           <h4>Judge:DR M.Gayathri</h4>
         </div>
       </div>
+
+      <div class="event">
+        <div class="left-content">
+          <h1>Rangoli</h1>
+          <br />
+          <p>
+            Date: 16/10/2023<br />
+          
+            Location:CSE Block<br />
+          
+          </p>
+          
+           
+          </a>
+        </div>
+        <img
+          src="Image/rangoli.jpg"
+          alt="rangoli"
+          class="event-image"
+          style="
+            border: 2px solid #e6835f;
+            display: block;
+            margin: 0 auto;
+            height: 300px;
+            width: 450px;
+          "
+        />
+        <div class="right-content">
+          <h3>Organizer: Srinidhi (IV-CSE)</h3>
+          <br />
+          <!-- <h3>Co-Ordinator: Ashwin (III-CSE)</h3> -->
+          <h4 style="font-size: large">PH: 8247061639</h4>
+          <h4>Judges:Dr. C. Sunitha Ram,Dr. C.K. Gomathy</h4>
+          <a href="./public/Rangoli.pdf">
+            <button>Rules and Regulations</button>
+          </a>
+        </div>
+      </div>
       <div class="event">
         <div class="left-content">
           <h1>Photography</h1>
+          <h2>(Within University Premises)</h2>
           <br />
           <!-- <p>
             Date: 6/11/2023<br />
@@ -369,6 +440,7 @@
           </p> -->
           <!-- <a href="https://forms.gle/kwqf5w37rahyxQ928">
             <button>Click to Register</button>
+            
           </a> -->
         </div>
         <img
@@ -438,7 +510,7 @@
           <p>
             Date: 09/11/2023<br />
             <!-- Time: 3:45 PM - 4:45 PM<br /> -->
-            <!-- Location: CSE Seminar Hall<br /> -->
+            Location: CSE Block<br />
             <!-- Last Date: 1/11/2023 -->
           </p>
           <!-- <a href="https://forms.gle/quxbiZwpwkDXHB7o8">
